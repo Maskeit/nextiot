@@ -7,8 +7,8 @@ const login = async () => {
 
     try{
         const loginResponse = await particle.login({
-            username: 'miguelagustin182@gmail.com',
-            password: 'Complex99@',
+            username: '',
+            password: '',
         });
         token = loginResponse.body.access_token;
         return token;
