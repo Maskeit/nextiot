@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin: auto;
+  max-width: 600px;
+  min-height: 600px;
+}
+
+.summary {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 16px;
+  background: radial-gradient(
+      circle 12px,
+      white 100%,
+      transparent calc(100% + 1px)
+    )
+    #ccc -16px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.details[open] .summary {
+  background-color: dodgerBlue;
+  background-position: 16px;
+}
+
+.switch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

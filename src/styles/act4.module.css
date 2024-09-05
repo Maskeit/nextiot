@@ -1,0 +1,31 @@
+.container {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-height: 90vh;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  
+  .information {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.4rem;
+    gap: 2rem;
+  }
+  
+  .temperature {
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 7px;
+  }
+  .humedad {
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 7px;
+  }
+  

@@ -1,54 +1,46 @@
 import Image from "next/image";
+import one from "../../public/images/1.png";
+import two from "../../public/images/2.png";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      <div className={styles.main}>
+        <div className={styles.imagenes}>
+          <Image
+            className={styles.image}
+            src={one}
+            alt="File image"
+            width={300}
+            height={300}
+          />
+          <Image
+            className={styles.image}
+            src={two}
+            alt="File image"
+            width={300}
+            height={300}
+          />
         </div>
-      </main>
+        <ol className={styles.list}>
+          <li className={styles.ctas}>
+            Monitor de temperatura y humedad
+            <a href="act4" className={styles.link}>
+              Ver Proyecto
+            </a>
+          </li>
+          <li className={styles.ctas}>
+            Led Toggle
+            <a href="act5" className={styles.link}>
+              Ver Proyecto
+            </a>
+          </li>
+        </ol>
+      </div>
       <footer className={styles.footer}>
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://docs.particle.io/reference/developer-tools/cli/#particle-token-create"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -59,24 +51,10 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Learn
+          Particle CLI
         </a>
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://codeale.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -87,7 +65,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          Go to Codeale.com →
         </a>
       </footer>
     </div>

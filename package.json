@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "14.2.8",
+    "particle-api-js": "^9.1.2",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.8"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "eslint": "^8",
